@@ -51,35 +51,6 @@ horse3.jpg
 horse4.jpg
 ...
 
-Baza danych
-Baza danych konzvalony zawiera 3 tabele:
-
-Tabela uzytkownicy
-id - INT klucz główny
-username - VARCHAR(50) nazwa użytkownika
-email - VARCHAR(100) adres email
-haslo - VARCHAR(255) zahashowane hasło
-rola - ENUM user admin rola użytkownika
-data_rejestracji - TIMESTAMP data rejestracji
-
-Tabela konie
-id - INT klucz główny
-nazwa - VARCHAR(100) imię konia
-rasa - VARCHAR(100) rasa część humorystyczna
-wiek - INT wiek w latach
-opis - TEXT humorystyczny opis
-cena_za_dobe - DECIMAL(10,2) cena za dobę
-zdjecie - VARCHAR(255) nazwa pliku ze zdjęciem
-dostepny - TINYINT(1) czy dostępny do wypożyczenia
-
-Tabela rezerwacje
-id - INT klucz główny
-id_uzytkownika - INT klucz obcy do uzytkownicy
-id_konia - INT klucz obcy do konie
-data_od - DATE początek rezerwacji
-data_do - DATE koniec rezerwacji
-status - ENUM oczekujaca potwierdzona anulowana
-data_rezerwacji - TIMESTAMP data złożenia rezerwacji
 
 Instalacja krok po kroku
 
